@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script src="odometer.js"></script>
+    <link href="odometer-theme-minimal.css" rel="stylesheet" />
+    <link href="styles.css" rel="stylesheet" />
+    <script src="https://code.highcharts.com/10.3.3/highcharts.js"></script>
+  </head>
+  <body>
+    <div class="header-rectangle">
+      <div class="icon-container">
+        <div class="yt-icon">
+          <svg
+            viewBox="0 0 24 24"
+            preserveAspectRatio="xMidYMid meet"
+            focusable="false"
+            class="style-scope yt-icon"
+            style="
+              pointer-events: none;
+              display: block;
+              width: 100%;
+              height: 100%;
+            "
+          >
+            <g
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              class="style-scope yt-icon"
+            >
+              <path
+                d="M21.58 7.19C21.35 6.33 20.67 5.65 19.81 5.42C18.25 5 12 5 12 5C12 5 5.75 5 4.19 5.42C3.33 5.65 2.65 6.33 2.42 7.19C2 8.75 2 12 2 12C2 12 2 15.25 2.42 16.81C2.65 17.67 3.33 18.35 4.19 18.58C5.75 19 12 19 12 19C12 19 18.25 19 19.81 18.58C20.67 18.35 21.35 17.67 21.58 16.81C22 15.25 22 12 22 12C22 12 22 8.75 21.58 7.19ZM10 15V9L15.2 12L10 15Z"
+                class="style-scope yt-icon"
+              ></path>
+            </g>
+          </svg>
+        </div>
+      </div>
+    </div>
+    <img
+      src="https://cdn.nethergames.org/skins/def463341f256af9656a2eebea910968/head.png"
+      alt=""
+      id="avatar"
+    />
+    <p id="title" onclick="search()">HuntingPuma378</p>
+    <div class="main-area">
+      <div class="count-area">
+        <div id="count">
+          <div id="odo1a" class="odometer">0</div>
+          <div id="odo2a" class="odometer">0</div>
+          <div id="odo3a" class="odometer">0</div>
+          <div id="comma1a">,</div>
+          <div id="odo4a" class="odometer">0</div>
+          <div id="odo5a" class="odometer">0</div>
+          <div id="odo6a" class="odometer">0</div>
+          <div id="comma2a">,</div>
+          <div id="odo7a" class="odometer">0</div>
+          <div id="odo8a" class="odometer">0</div>
+          <div id="odo9a" class="odometer">0</div>
+        </div>
+        <p class="label">Credits</p>
+      </div>
+      <div class="chart-area">
+        <div class="chart-text-area">
+          <p class="channel-growth-label">Credit growth</p>
+          <p class="last-growth-label">Last hour</p>
+        </div>
+        <div id="chart"></div>
+      </div>
+    </div>
+  </body>
+  <script src="script.js"></script>
+</html>
