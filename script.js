@@ -266,13 +266,13 @@ function getdata(a) {
 	fetch(url + a)
 		.then((res) => res.json())
 		.then((data) => {
-			cmm = spl(data.credits);
-			raw = data.credits;
+			cmm = spl(data.xp);
+			raw = data.xp;
 			document.getElementById("avatar").src = data.avatar;
 			document.getElementById("title").textContent = data.name;
 			if (chart.series[0].points.length >= 3600)
 				chart.series[0].data[0].remove();
-			chart.series[0].addPoint([Date.now(), data.credits]);
+			chart.series[0].addPoint([Date.now(), data.xp]);
 			return cmm;
 		});
 }
